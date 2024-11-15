@@ -7,17 +7,40 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <div class="h-screen flex items-center justify-center bg-red-300"> 
-      <form class="flex flex-col w-full max-w-lg bg-rose-400 p-10 rounded-lg outline outline-4 outline-white">
+    <div class="h-screen flex items-center justify-center bg-red-300">
+      <form
+        class="flex flex-col w-full max-w-lg bg-rose-400 p-10 rounded-lg outline outline-4 outline-white"
+      >
         <h1 class="text-5xl mb-10 font-bold text-white">Grupp 2 - Labb 1</h1>
-        <label for="color">Färg</label>
-        <input type="text" name="color" id="color" class="textfield my-2 px-4 py-3 border rounded-lg text-black" />
-        <label for="content">Innehåll</label>
-        <input type="text" name="content" id="content" class="textfield my-2 px-4 py-3 border rounded-lg text-black" />
-        <label for="divStyle" class="my-2 text-white mr-2">Stil på box</label>
-        <input type="checkbox" name="divStyle" id="divStyle" />
-        <button type="button" id="button" class="bg-violet-500 hover:bg-violet-600 text-white font-bold py-2 px-4  rounded-lg">Ta bort</button>
-        <div id="divElement" class="bg-transparent p-10 outline outline-2 outline-offset-2 h-20 pt-5 leading-5 text-white mt-10">
+        <label for="color" class="text-white">Färg</label>
+        <input
+          type="text"
+          name="color"
+          id="color"
+          class="textfield my-2 px-4 py-3 border rounded-lg text-black"
+        />
+        <label for="content" class="text-white">Innehåll</label>
+        <input
+          type="text"
+          name="content"
+          id="content"
+          class="textfield my-2 px-4 py-3 border rounded-lg text-black"
+        />
+        <div class="flex py-4">
+          <label for="divStyle" class="my-2 text-white mr-2">Stil på box</label>
+          <input type="checkbox" name="divStyle" id="divStyle" />
+        </div>
+        <button
+          type="button"
+          id="button"
+          class="bg-violet-500 hover:bg-violet-600 text-white font-bold py-2 px-4 rounded-lg"
+        >
+          Ta bort
+        </button>
+        <div
+          id="divElement"
+          class="bg-transparent p-10 outline outline-2 outline-offset-2 h-20 pt-5 leading-5 text-white mt-10"
+        >
           <p id="values"></p>
         </div>
       </form>
