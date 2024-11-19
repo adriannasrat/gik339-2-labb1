@@ -3,9 +3,22 @@ const textFields = document.querySelectorAll(".textfield");
 const divElement = document.getElementById("divElement");
 const button = document.getElementById("button");
 
-textFields.forEach(el => {
-    el.addEventListener('input', e => {
-      console.log(e.target);
-    })
-  })
-  
+checkbox.addEventListener('change', () => {
+  const colorValue = document.getElementById('color').value;
+  divElement.style.backgroundColor = colorValue;
+});
+
+function handleInput(e) {
+  console.log(e.target);
+  if (e.target.name === 'content') {
+    divElement.innerHTML = e.target.value;
+  }
+}
+
+textFields.forEach(field => {
+  field.addEventListener('input', handleInput);
+});
+
+button.addEventListener('click', () => {
+  divElement.remove();
+});
