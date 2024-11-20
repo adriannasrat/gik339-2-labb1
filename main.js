@@ -4,8 +4,7 @@ const divElement = document.getElementById("divElement");
 const button = document.getElementById("button");
 
 checkbox.addEventListener('change', () => {
-  const colorValue = document.getElementById('color').value;
-  divElement.style.backgroundColor = colorValue;
+  divElement.style.backgroundColor = textFields[0].value;
 });
 
 function handleInput(e) {
